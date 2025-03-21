@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController" prefWidth="400" prefHeight="300">
+    <VBox alignment="CENTER" spacing="15" layoutX="50" layoutY="50" prefWidth="300" prefHeight="200" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" AnchorPane.topAnchor="50" AnchorPane.bottomAnchor="50">
+        <Label text="Movie Rental System Login" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+        <TextField fx:id="usernameField" promptText="Username" maxWidth="200"/>
+        <PasswordField fx:id="passwordField" promptText="Password" maxWidth="200"/>
+        <Button text="Login" fx:id="loginButton" maxWidth="200"/>
+        <Button fx:id="registerButton" text="Register" maxWidth="200"/>
+        <Label fx:id="errorLabel" textFill="red" visible="false" />
+    </VBox>
+</AnchorPane>

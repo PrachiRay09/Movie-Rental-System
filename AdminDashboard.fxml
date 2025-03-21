@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminDashboardController" prefWidth="1000" prefHeight="700">
+    <TabPane prefWidth="1000" prefHeight="700" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Dashboard">
+                <fx:include source="AdminCharts.fxml"/>
+            </Tab>
+            <Tab text="Users">
+                <fx:include source="UserManagementView.fxml"/>
+            </Tab>
+            <Tab text="Movies">
+                <fx:include source="MovieManagementView.fxml"/>
+            </Tab>
+            <Tab text="Rentals">
+                <fx:include source="RentalManagementView.fxml"/>
+            </Tab>
+        </tabs>
+    </TabPane>
+</AnchorPane>
