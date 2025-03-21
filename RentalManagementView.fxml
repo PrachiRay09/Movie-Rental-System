@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RentalManagementController" spacing="10" style="-fx-padding: 20;">
+    <Label text="Rental Management" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+    <TableView fx:id="rentalTable" prefHeight="200">
+        <columns>
+            <TableColumn fx:id="userColumn" text="User"/>
+            <TableColumn fx:id="movieColumn" text="Movie"/>
+            <TableColumn fx:id="rentalDateColumn" text="Rental Date"/>
+            <TableColumn fx:id="dueDateColumn" text="Due Date"/>
+            <TableColumn fx:id="statusColumn" text="Status"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10">
+        <TextField fx:id="userField" promptText="User"/>
+        <TextField fx:id="movieField" promptText="Movie"/>
+        <DatePicker fx:id="dueDatePicker" promptText="Due Date"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Button text="Rent Movie" fx:id="rentButton"/>
+        <Button text="Return Movie" fx:id="returnButton"/>
+        <Button text="Clear" fx:id="clearButton"/>
+    </HBox>
+</VBox>

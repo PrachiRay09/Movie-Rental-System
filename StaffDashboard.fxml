@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StaffDashboardController" spacing="10" style="-fx-padding: 20;">
+    <HBox spacing="20">
+        <PieChart fx:id="movieAvailabilityChart" title="Movie Availability"/>
+        <BarChart fx:id="rentalStatusChart" title="Rental Status">
+            <xAxis>
+                <CategoryAxis label="Status"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Count"/>
+            </yAxis>
+        </BarChart>
+    </HBox>
+</VBox>

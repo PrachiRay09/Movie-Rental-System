@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.UserManagementController">
+    <VBox spacing="10" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" AnchorPane.bottomAnchor="10">
+        <HBox spacing="10">
+            <TextField fx:id="searchField" promptText="Search..." />
+            <ComboBox fx:id="roleFilterComboBox" promptText="Filter by Role" />
+        </HBox>
+
+        <TableView fx:id="userTable">
+            <columns>
+                <TableColumn fx:id="usernameColumn" text="Username" />
+                <TableColumn fx:id="emailColumn" text="Email" />
+                <TableColumn fx:id="roleColumn" text="Role" />
+                <TableColumn fx:id="statusColumn" text="Status" />
+                <TableColumn fx:id="firstNameColumn" text="First Name" />
+                <TableColumn fx:id="lastNameColumn" text="Last Name" />
+                <TableColumn fx:id="phoneNumberColumn" text="Phone Number" />
+                <TableColumn fx:id="addressColumn" text="Address" />
+            </columns>
+        </TableView>
+
+        <GridPane hgap="20" vgap="10">
+            <columnConstraints>
+                <ColumnConstraints percentWidth="25" />
+                <ColumnConstraints percentWidth="25" />
+                <ColumnConstraints percentWidth="25" />
+                <ColumnConstraints percentWidth="25" />
+            </columnConstraints>
+
+            <Label text="Username:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+            <TextField fx:id="usernameField" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+            <Label text="Password:" GridPane.rowIndex="0" GridPane.columnIndex="2" />
+            <PasswordField fx:id="passwordField" GridPane.rowIndex="0" GridPane.columnIndex="3" />
+
+            <Label text="Email:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+            <TextField fx:id="emailField" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+            <Label text="Role:" GridPane.rowIndex="1" GridPane.columnIndex="2" />
+            <ComboBox fx:id="roleComboBox" GridPane.rowIndex="1" GridPane.columnIndex="3" />
+
+            <Label text="Status:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+            <CheckBox fx:id="statusCheckBox" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+            <Label text="First Name:" GridPane.rowIndex="2" GridPane.columnIndex="2" />
+            <TextField fx:id="firstNameField" GridPane.rowIndex="2" GridPane.columnIndex="3" />
+
+            <Label text="Last Name:" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+            <TextField fx:id="lastNameField" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+            <Label text="Phone Number:" GridPane.rowIndex="3" GridPane.columnIndex="2" />
+            <TextField fx:id="phoneNumberField" GridPane.rowIndex="3" GridPane.columnIndex="3" />
+
+            <Label text="Address:" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+            <TextField fx:id="addressField" GridPane.rowIndex="4" GridPane.columnIndex="1" GridPane.columnSpan="3" />
+        </GridPane>
+
+        <HBox spacing="10">
+            <Button fx:id="addButton" text="Add User" />
+            <Button fx:id="updateButton" text="Update User" />
+            <Button fx:id="deleteButton" text="Delete User" />
+            <Button fx:id="clearButton" text="Clear Form" />
+        </HBox>
+
+        <Label fx:id="errorLabel" textFill="red" visible="false" />
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegisterController" prefWidth="400" prefHeight="500">
+    <VBox alignment="CENTER" spacing="10" layoutX="50" layoutY="30" prefWidth="300" prefHeight="450" 
+          AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" AnchorPane.topAnchor="30" AnchorPane.bottomAnchor="30">
+        <Label text="User Registration" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+        <TextField fx:id="firstNameField" promptText="First Name" maxWidth="250"/>
+        <TextField fx:id="lastNameField" promptText="Last Name" maxWidth="250"/>
+        <TextField fx:id="phoneNumberField" promptText="Phone Number" maxWidth="250"/>
+        <TextField fx:id="addressField" promptText="Address" maxWidth="250"/>
+
+        <TextField fx:id="usernameField" promptText="Username" maxWidth="250"/>
+        <TextField fx:id="emailField" promptText="Email" maxWidth="250"/>
+        <PasswordField fx:id="passwordField" promptText="Password" maxWidth="250"/>
+        <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password" maxWidth="250"/>
+
+        <ComboBox fx:id="roleComboBox" promptText="Select Role" maxWidth="250"/>
+
+        <Button text="Register" fx:id="registerButton" maxWidth="250"/>
+        <Label fx:id="errorLabel" textFill="red" visible="false" />
+    </VBox>
+</AnchorPane>

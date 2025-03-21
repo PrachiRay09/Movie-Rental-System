@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CustomerDashboardController" spacing="10" style="-fx-padding: 20;">
+    <HBox spacing="20">
+        <PieChart fx:id="rentalHistoryChart" title="Rental History Breakdown"/>
+        <BarChart fx:id="topGenresChart" title="Top Rented Genres">
+            <xAxis>
+                <CategoryAxis label="Genre"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Count"/>
+            </yAxis>
+        </BarChart>
+    </HBox>
+</VBox>

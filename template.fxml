@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TemplateController">
+    
+    <!-- Top Tab Navigation -->
+    <top>
+        <TabPane fx:id="tabPane">
+            <Tab text="Dashboard" fx:id="tabDashboard" closable="false"/>
+            <Tab text="Movies" fx:id="tabMovies" closable="false"/>
+            <Tab text="Rentals" fx:id="tabRentals" closable="false"/>
+            <Tab text="Users" fx:id="tabUsers" closable="false" visible="false"/>
+        </TabPane>
+    </top>
+    
+    <!-- Main Content Area -->
+    <center>
+        <StackPane fx:id="contentArea">
+            <Label text="Welcome to the Movie Rental System" fx:id="lblWelcome"/>
+        </StackPane>
+    </center>
+</BorderPane>
